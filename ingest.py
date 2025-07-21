@@ -102,64 +102,6 @@ def ingest_documents(docs_path="docs"):
             
     except Exception as e:
         logger.error(f"❌ Failed to ingest documents: {str(e)}")
-    # rag = ClinicalRAG()
-    # loaders = {
-    #     ".pdf": PyPDFLoader,
-    #     ".docx": Docx2txtLoader,
-    #     ".txt": TextLoader,
-    #     ".xlsx": UnstructuredExcelLoader
-    # }
     
-    # documents = []
-    # total_files = 0
-    # skipped_files = []
-
-    # # for file in os.listdir(docs_path):
-    # #     ext = os.path.splitext(file)[1]
-    # #     if ext in loaders:
-    # #         loader = loaders[ext](os.path.join(docs_path, file))
-    # #         documents.extend(loader.load())
-    # for file in os.listdir(docs_path):
-    #     ext = os.path.splitext(file)[1].lower()
-    #     file_path = os.path.join(docs_path, file)
-
-    #     if ext in loaders:
-    #         total_files += 1
-    #         try:
-    #             loader = loaders[ext](file_path)
-    #             loaded_docs = loader.load()
-    #             documents.extend(loaded_docs)
-    #             print(f"✅ Loaded: {file} ({len(loaded_docs)} docs)")
-    #         except zipfile.BadZipFile:
-    #             print(f"❌ Invalid .docx file (not a zip): {file}")
-    #             skipped_files.append(file)
-    #         except Exception as e:
-    #             print(f"❌ Failed to load {file}: {e}")
-    #             skipped_files.append(file)
-    #     else:
-    #         print(f"⚠️ Skipped unsupported file type: {file}")
-    
-    # if not documents:
-    #     print("⚠️ No valid documents found to ingest.")
-    #     return
-
-
-    # text_splitter = RecursiveCharacterTextSplitter(
-    #     chunk_size=1000,
-    #     chunk_overlap=200
-    # )
-    # chunks = text_splitter.split_documents(documents)
-    
-    # # Add source metadata
-    # for chunk in chunks:
-    #     chunk.metadata["source"] = os.path.basename(chunk.metadata["source"])
-    
-    # rag.vector_db.add_documents(chunks)
-    # rag.vector_db.persist()
-    # # print(f"Ingested {len(chunks)} chunks from {len(documents)} documents")
-    # print(f"\n✅ Ingest complete: {len(chunks)} chunks from {total_files} files")
-    # if skipped_files:
-    #     print(f"⚠️ Skipped files: {skipped_files}")
-
 if __name__ == "__main__":
     ingest_documents()
