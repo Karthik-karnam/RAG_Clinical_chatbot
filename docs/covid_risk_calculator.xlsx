@@ -1,0 +1,11 @@
+Risk Factor,Points
+Age >65,3
+Chronic Lung Disease,2
+Diabetes,2
+Immunocompromised,3
+Obesity (BMI >30),1
+
+Risk Categories:
+0-3 points: Low risk
+4-6 points: Moderate risk
+7+ points: High risk
