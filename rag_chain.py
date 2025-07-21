@@ -123,26 +123,3 @@ class ClinicalRAG:
                 "metrics": {"word_count": 0},
                 "hallucination_detected": False
             }
-            # try:
-            #     result = qa_chain({"question": query, "chat_history": chat_history})
-            #     return {
-            #     "answer": result["answer"],
-            #     "sources": list(set(doc.metadata["source"] for doc in result["source_documents"]))
-            #     }
-            # except RateLimitError:
-            #     return {
-            #         "answer": "⚠️ OpenAI API quota exceeded. Please visit https://platform.openai.com/account/usage to check your limits.",
-            #         "sources": []
-            #     }
-            # except OpenAIError as e:
-            #     return {
-            #         "answer": f"⚠️ OpenAI API error: {str(e)}",
-            #         "sources": []
-            #     }
-
-
-        # result = qa_chain({"question": query, "chat_history": chat_history})
-        # return {
-        #     "answer": result["answer"],
-        #     "sources": list(set(doc.metadata["source"] for doc in result["source_documents"]))
-        # }
