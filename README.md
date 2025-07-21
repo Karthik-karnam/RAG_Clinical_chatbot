@@ -112,14 +112,19 @@ streamlit run app.py
 <img width="1911" height="884" alt="Screenshot 2025-07-21 at 6 02 42 PM" src="https://github.com/user-attachments/assets/55adde74-c3af-4211-a2e1-a95ddbfc4407" />
 
 - Upload documents from the sidebar
+  
+<img width="1911" height="919" alt="Screenshot 2025-07-21 at 6 32 04 PM" src="https://github.com/user-attachments/assets/4a29d4aa-f099-401c-9550-f08bbe4eb0e0" />
 
 - Click “Process Documents” to embed
-
 - Ask a question in the chat box
 
-- View answers, sources, and metrics
+<img width="1911" height="919" alt="Screenshot 2025-07-21 at 6 30 27 PM" src="https://github.com/user-attachments/assets/d18ea49d-b3ab-40ad-8b34-574330aed3c3" />
 
-- Export chat history as needed
+- View answers, sources, and metrics
+  
+<img width="1911" height="919" alt="Screenshot 2025-07-21 at 6 27 48 PM" src="https://github.com/user-attachments/assets/88cbcc08-c5a6-4a02-ab21-db05cfe85da9" />
+
+- Export chat history as needed, you can download the chat as well
 
 
 # 🧪 Test Sample Documents
